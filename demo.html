@@ -1,231 +1,438 @@
-<div style="display: block; margin: 0 auto; width: 100%">
-<div style="overflow-x: auto; overflow-y: auto; height: auto; width:auto">
-<h1>Samples of paper: Improve emotional speech synthesis quality by learning explicit and implicit representations with semi-supervised learning</h1>
-<p>ABSTRACT:Due to the lack of high-quality emotional speech synthesis datasets, the naturalness and expressiveness of synthesized speech are still lacking in order to achieve human-like communication. And existing emotional speech synthesis system usually extracts emotional information only from reference audio and ignores sentiment information implicit in the text. Therefore, we propose a novel model to improve emotional speech synthesis quality by learning explicit and implicit representations with semi-supervised learning. In addition to explicit emotional representations from reference audio, we propose an implicit emotion representations learning method based on graph neural network, considering dependency relations of a sentence and text sentiment classification (TSC) task. For the lack of emotion-annotated datasets, we leverage large amounts of expressive datasets to reinforce training the proposed model with semi-supervised learning. Experiments show that the proposed method can improve the naturalness and expressiveness of synthetic speech and is better than the baseline model.</p>
- </div>
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    </script>
+    <title>Improve emotional speech synthesis quality by learning explicit and implicit representations with semi-supervised learning</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+  </head>
 
-<h2> Result </h2>
-<h3> Angry </h3>
-<div style="overflow-x: auto; overflow-y: auto; height: auto; width:auto;">
-<table border = "0.5">
-<tr>
-  <td>
-  Text1:A nauseous draught.
-  </td>
-</tr>
-<tr>
-<td>T_GST<audio src="Angry/T_GST/1.wav" controls width="10"></audio></td>
-<td>T_SER<audio src="Angry/T_SER/1.wav" controls></audio></td>
-<td>T_G_S<audio src="Angry/T_G_S/1.wav" controls></audio></td>
-<td>T_S_G<audio src="Angry/T_S_G/1.wav" controls></audio></td>
-</tr>
-
- <tr>
-<td>Text2:They'd never know I'd regular ran away.</td>
-</tr>
-<tr>
-  <td>T_GST<audio src="Angry/T_GST/2.wav" controls width="10"></audio></td>
-  <td>T_SER<audio src="Angry/T_SER/2.wav" controls></audio></td>
-  <td>T_G_S<audio src="Angry/T_G_S/2.wav" controls></audio></td>
-  <td>T_S_G<audio src="Angry/T_S_G/2.wav" controls></audio></td>
-  </tr>
-<tr>
-  <td>Text3:I'd far rather go without them than eat them!</td>
-</tr>
-<tr>
-  <td>T_GST<audio src="Angry/T_GST/3.wav" controls width="10"></audio></td>
-  <td>T_SER<audio src="Angry/T_SER/3.wav" controls></audio></td>
-  <td>T_G_S<audio src="Angry/T_G_S/3.wav" controls></audio></td>
-  <td>T_S_G<audio src="Angry/T_S_G/3.wav" controls></audio></td>
-  </tr>
- <tr>
-  <tr>
-    <td>Text4:The song is really louding on a gate.</td>
-  </tr>
-  <tr>
-    <td>T_GST<audio src="Angry/T_GST/4.wav" controls width="10"></audio></td>
-    <td>T_SER<audio src="Angry/T_SER/4.wav" controls></audio></td>
-    <td>T_G_S<audio src="Angry/T_G_S/4.wav" controls></audio></td>
-    <td>T_S_G<audio src="Angry/T_S_G/4.wav" controls></audio></td>
-    </tr>
-  <tr>
-    <tr>
-      <td>Text5:Why should i care though David's lips were twitching?</td>
-    </tr>
-  <tr>
-      <td>T_GST<audio src="Angry/T_GST/5.wav" controls width="10"></audio></td>
-      <td>T_SER<audio src="Angry/T_SER/5.wav" controls></audio></td>
-      <td>T_G_S<audio src="Angry/T_G_S/5.wav" controls></audio></td>
-      <td>T_S_G<audio src="Angry/T_S_G/5.wav" controls></audio></td>
-      </tr>
-</table>
+  <body>
+    <!--<div class="center">-->
+    <!--This page uses a template from the <a href="http://hi.cs.waseda.ac.jp/~iizuka/projects/completion/">project page</a> of Satoshi Iizuka et al, <i>"Globally and Locally Consistent Image Completion"</i>.-->
+    <!--</div>-->
+    <div class="content">
+      <!--<img src="images/hpcnt_logo.png" width="200" border="0" class="center">-->
+      <h1>Improve emotional speech synthesis quality by learning explicit and implicit representations with semi-supervised learning</h1>
+      <p id="authors">
+        Jiaxu He &nbsp;&nbsp;&nbsp;&nbsp;
+        Cheng Gong &nbsp;&nbsp;&nbsp;&nbsp;
+        Longbiao Wang <sup>*</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+        Di Jin &nbsp;&nbsp;&nbsp;&nbsp;
+        Xiaobao Wang &nbsp;&nbsp;&nbsp;&nbsp;
+        Junhai Xu &nbsp;&nbsp;&nbsp;&nbsp;
+        Jianwu Dang &nbsp;&nbsp;&nbsp;&nbsp;
+        <br><br>
+        <!--<a href="http://hyperconnect.com/", target="_blank">Hyperconnect</a><br>Seoul, Republic of Korea-->
+        <br>Submitted to INTERSPEECH2022 <a href="https://interspeech2022.org", target="_blank">INTERSPEECH 2022</a>
+      </p>
+      <div class="footnote">
+        *Corresponding author.
+      </div>
 </div>
-<div style="overflow-x: auto; overflow-y: auto; height: auto; width:auto;">
-<h3> Happy </h3>
-<table border = "0">
-  <tr>
-    <td>
-    Text1:I thank you for this mercy!
-    </td>
-  </tr>
-  <tr>
-  <td>T_GST<audio src="Happy/T_GST/1.wav" controls width="10"></audio></td>
-  <td>T_SER<audio src="Happy/T_SER/1.wav" controls></audio></td>
-  <td>T_G_S<audio src="Happy/T_G_S/1.wav" controls></audio></td>
-  <td>T_S_G<audio src="Happy/T_S_G/1.wav" controls></audio></td>
-  </tr>
+
+<div class="content">
+  <h2>Abstract</h2>
+  <p>
+    Due to the lack of high-quality emotional speech synthesis datasets, the naturalness and expressiveness of synthesized speech are still lacking in order to achieve human-like communication. And existing emotional speech synthesis system usually extracts emotional information only from reference audio and ignores sentiment information implicit in the text. Therefore, we propose a novel model to improve emotional speech synthesis quality by learning explicit and implicit representations with semi-supervised learning. In addition to explicit emotional representations from reference audio, we propose an implicit emotion representations learning method based on graph neural network, considering dependency relations of a sentence and text sentiment classification (TSC) task. For the lack of emotion-annotated datasets, we leverage large amounts of expressive datasets to reinforce training the proposed model with semi-supervised learning. Experiments show that the proposed method can improve the naturalness and expressiveness of synthetic speech and is better than the baseline model.
+  </p>
+</div>
+
+<div class="content">
+  <h2>Text-to-Speech Samples for Unseen Texts During Training</h2>
+  <h3>Definition (same as defined in  our submitted paper)</h3>
+  <p>
+    <strong>T_GST</strong>:We use GST-Tacotron as the baseline. <br> 
+    <strong>T_SER</strong>:Only using the SER model to learn emotion information. We also use this model as another baseline.<br> 
+    <strong>T_G_S</strong>:Our proposed model that learns sentiment and emotion information from both text and audio. (G-first)<br> 
+    <strong>T_S_G</strong>:Our proposed model that learns emotion and sentiment information from both audio and text. (S-first)<br>
+  </p>
+<h3>Results for four emotions</h3>
+<p><b>Angry</b></p>
+<table  border="1">
+  <tbody>
   
-   <tr>
-  <td>Text2:I think it'll encourage me.</td>
+    <tr>
+    <td colspan="5">text1:"A nauseous draught."</td>
+    <td colspan="5">text2:"This used to be Jerry's occupation."</td>
+
   </tr>
   <tr>
-    <td>T_GST<audio src="Happy/T_GST/2.wav" controls width="10"></audio></td>
-    <td>T_SER<audio src="Happy/T_SER/2.wav" controls></audio></td>
-    <td>T_G_S<audio src="Happy/T_G_S/2.wav" controls></audio></td>
-    <td>T_S_G<audio src="Happy/T_S_G/2.wav" controls></audio></td>
-    </tr>
-  <tr>
-    <td>Text3:Andy what's the gyre and to gimble.</td>
+    <th><strong>GT</strong></th>
+    <th><strong>T_GST</strong></th>
+    <th><strong>T_SER</strong></th>
+    <th><strong>T_G_S</strong></th>
+    <th>T_S_G</th>
+    <th><strong>GT</strong></th>
+    <th><strong>T_GST</strong></th>
+    <th><strong>T_SER</strong></th>
+    <th><strong>T_G_S</strong></th>
+    <th><strong>T_S_G</strong></th>
   </tr>
-  <tr>
-    <td>T_GST<audio src="Happy/T_GST/3.wav" controls width="10"></audio></td>
-    <td>T_SER<audio src="Happy/T_SER/3.wav" controls></audio></td>
-    <td>T_G_S<audio src="Happy/T_G_S/3.wav" controls></audio></td>
-    <td>T_S_G<audio src="Happy/T_S_G/3.wav" controls></audio></td>
-    </tr>
-   <tr>
     <tr>
-      <td>Text4:I believe you are one of them!</td>
-    </tr>
-    <tr>
-      <td>T_GST<audio src="Happy/T_GST/4.wav" controls width="10"></audio></td>
-      <td>T_SER<audio src="Happy/T_SER/4.wav" controls></audio></td>
-      <td>T_G_S<audio src="Happy/T_G_S/4.wav" controls></audio></td>
-      <td>T_S_G<audio src="Happy/T_S_G/4.wav" controls></audio></td>
+        <th>
+            <audio controls="" style="width: 140px;">
+              <source src="./audio/0018_000360_GT.wav" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+    </th>
+    <th>
+            <audio controls="" style="width: 140px;">
+              <source src="./audio/0018_000360_gst.wav" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+    </th>
+    <th>
+            <audio controls="" style="width: 140px;">
+              <source src="./audio/0018_000360_SER.wav" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+    </th>
+       <th>
+            <audio controls="" style="width: 140px;">
+              <source src="./audio/0018_000360_GNN_SER.wav" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+    </th>
+    <th>
+            <audio controls="" style="width: 140px;">
+              <source src="./audio/0018_000360_SER_GNN.wav" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+    </th>
+    <th>
+            <audio controls="" style="width: 140px;">
+              <source src="./audio/0019_000383_GT.wav" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+    </th>
+    <th>
+      <audio controls="" style="width: 140px;">
+        <source src="./audio/0019_000383_GST.wav" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+</th>
+<th>
+  <audio controls="" style="width: 140px;">
+    <source src="./audio/0019_000383_SER.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+</th>
+<th>
+  <audio controls="" style="width: 140px;">
+    <source src="./audio/0019_000383_G_S.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+</th>
+<th>
+  <audio controls="" style="width: 140px;">
+    <source src="./audio/0019_000383_S_G.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+</th>
       </tr>
-    <tr>
-      <tr>
-        <td>Text5:All smile were real and the happier the more sincere.</td>
-      </tr>
-      <tr>
-        <td>T_GST<audio src="Happy/T_GST/5.wav" controls width="10"></audio></td>
-        <td>T_SER<audio src="Happy/T_SER/5.wav" controls></audio></td>
-        <td>T_G_S<audio src="Happy/T_G_S/5.wav" controls></audio></td>
-        <td>T_S_G<audio src="Happy/T_S_G/5.wav" controls></audio></td>
-        </tr>
-      <tr>
-</table>
-</div>
-<div style="overflow-x: auto; overflow-y: auto; height: auto; width:auto;">
-  <h3> Sad </h3>
-  <table border = "0">
-    <tr>
-      <td>
-      Text1:On the twenty second of last march.
-      </td>
-    </tr>
-    <tr>
-    <td>T_GST<audio src="Sad/T_GST/1.wav" controls width="10"></audio></td>
-    <td>T_SER<audio src="Sad/T_SER/1.wav" controls></audio></td>
-    <td>T_G_S<audio src="Sad/T_G_S/1.wav" controls></audio></td>
-    <td>T_S_G<audio src="Sad/T_S_G/1.wav" controls></audio></td>
-    </tr>
     
-     <tr>
-    <td>Text2:I did go, and made many prisoners.</td>
+  </tbody></table>
+
+
+  <p><b>Happy</b></p>
+  <table  border="1">
+    <tbody>
+    
+      <tr>
+      <td colspan="5">text1:"Clear than clear water!"</td>
+      <td colspan="5">text2:"That was his chief thought."</td>
+  
     </tr>
     <tr>
-      <td>T_GST<audio src="Sad/T_GST/2.wav" controls width="10"></audio></td>
-      <td>T_SER<audio src="Sad/T_SER/2.wav" controls></audio></td>
-      <td>T_G_S<audio src="Sad/T_G_S/2.wav" controls></audio></td>
-      <td>T_S_G<audio src="Sad/T_S_G/2.wav" controls></audio></td>
-      </tr>
-    <tr>
-      <td>Text3:Andy what's the gyre and to gimble.</td>
+      <th><strong>GT</strong></th>
+      <th><strong>T_GST</strong></th>
+      <th><strong>T_SER</strong></th>
+      <th><strong>T_G_S</strong></th>
+      <th>T_S_G</th>
+      <th><strong>GT</strong></th>
+      <th><strong>T_GST</strong></th>
+      <th><strong>T_SER</strong></th>
+      <th><strong>T_G_S</strong></th>
+      <th><strong>T_S_G</strong></th>
     </tr>
-    <tr>
-      <td>T_GST<audio src="Sad/T_GST/3.wav" controls width="10"></audio></td>
-      <td>T_SER<audio src="Sad/T_SER/3.wav" controls></audio></td>
-      <td>T_G_S<audio src="Sad/T_G_S/3.wav" controls></audio></td>
-      <td>T_S_G<audio src="Sad/T_S_G/3.wav" controls></audio></td>
-      </tr>
-     <tr>
       <tr>
-        <td>Text4:That was his chief thought.</td>
-      </tr>
-      <tr>
-        <td>T_GST<audio src="Sad/T_GST/4.wav" controls width="10"></audio></td>
-        <td>T_SER<audio src="Sad/T_SER/4.wav" controls></audio></td>
-        <td>T_G_S<audio src="Sad/T_G_S/4.wav" controls></audio></td>
-        <td>T_S_G<audio src="Sad/T_S_G/4.wav" controls></audio></td>
+          <th>
+              <audio controls="" style="width: 140px;">
+                <source src="./audio/0016_000705_GT.wav" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+      </th>
+      <th>
+              <audio controls="" style="width: 140px;">
+                <source src="./audio/0016_000705_GST.wav" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+      </th>
+      <th>
+              <audio controls="" style="width: 140px;">
+                <source src="./audio/0016_000705_SER.wav" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+      </th>
+         <th>
+              <audio controls="" style="width: 140px;">
+                <source src="./audio/0016_000705GNN_SER.wav" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+      </th>
+      <th>
+              <audio controls="" style="width: 140px;">
+                <source src="./audio/0016_000705_SER_GNN.wav" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+      </th>
+      <th>
+              <audio controls="" style="width: 140px;">
+                <source src="./audio/0020_000708_GT.wav" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+      </th>
+      <th>
+        <audio controls="" style="width: 140px;">
+          <source src="./audio/0020_000708_GST.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+  </th>
+  <th>
+    <audio controls="" style="width: 140px;">
+      <source src="./audio/0020_000708_SER.wav" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+  </th>
+  <th>
+    <audio controls="" style="width: 140px;">
+      <source src="./audio/0020_000708GNN_SER.wav" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+  </th>
+  <th>
+    <audio controls="" style="width: 140px;">
+      <source src="./audio/0020_000708SER_GNN.wav" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+  </th>
         </tr>
-      <tr>
-        <tr>
-          <td>Text5:They'd never know I'd regular ran away.             </td>
-        </tr>
-        <tr>
-          <td>T_GST<audio src="Sad/T_GST/5.wav" controls width="10"></audio></td>
-          <td>T_SER<audio src="Sad/T_SER/5.wav" controls></audio></td>
-          <td>T_G_S<audio src="Sad/T_G_S/5.wav" controls></audio></td>
-          <td>T_S_G<audio src="Sad/T_S_G/5.wav" controls></audio></td>
-          </tr>
-        <tr>
-  </table>
-  </div>
-  <div style="overflow-x: auto; overflow-y: auto; height: auto; width:auto;">
-    <h3> Neutral </h3>
-    <table border = "0">
-      <tr>
-        <td>
-        Text1:A nauseous draught.
-        </td>
-      </tr>
-      <tr>
-      <td>T_GST<audio src="Neutral/T_GST/1.wav" controls width="10"></audio></td>
-      <td>T_SER<audio src="Neutral/T_SER/1.wav" controls></audio></td>
-      <td>T_G_S<audio src="Neutral/T_G_S/1.wav" controls></audio></td>
-      <td>T_S_G<audio src="Neutral/T_S_G/1.wav" controls></audio></td>
-      </tr>
       
-       <tr>
-      <td>Text2:That was his chief thought.      </td>
+    </tbody></table>
+
+
+    <p><b>Neutral</b></p>
+    <table  border="1">
+      <tbody>
+      
+        <tr>
+        <td colspan="5">text1:"Chapter eighteen, the return journey."</td>
+        <td colspan="5">text2:"A nauseous draught."</td>
+    
       </tr>
       <tr>
-        <td>T_GST<audio src="Neutral/T_GST/2.wav" controls width="10"></audio></td>
-        <td>T_SER<audio src="Neutral/T_SER/2.wav" controls></audio></td>
-        <td>T_G_S<audio src="Neutral/T_G_S/2.wav" controls></audio></td>
-        <td>T_S_G<audio src="Neutral/T_S_G/2.wav" controls></audio></td>
-        </tr>
-      <tr>
-        <td>Text3:On the twenty second of last march.        </td>
+        <th><strong>GT</strong></th>
+        <th><strong>T_GST</strong></th>
+        <th><strong>T_SER</strong></th>
+        <th><strong>T_G_S</strong></th>
+        <th>T_S_G</th>
+        <th><strong>GT</strong></th>
+        <th><strong>T_GST</strong></th>
+        <th><strong>T_SER</strong></th>
+        <th><strong>T_G_S</strong></th>
+        <th><strong>T_S_G</strong></th>
       </tr>
-      <tr>
-        <td>T_GST<audio src="Neutral/T_GST/3.wav" controls width="10"></audio></td>
-        <td>T_SER<audio src="Neutral/T_SER/3.wav" controls></audio></td>
-        <td>T_G_S<audio src="Neutral/T_G_S/3.wav" controls></audio></td>
-        <td>T_S_G<audio src="Neutral/T_S_G/3.wav" controls></audio></td>
-        </tr>
-       <tr>
         <tr>
-          <td>Text4:That I owe my thanks to you.          </td>
-        </tr>
-        <tr>
-          <td>T_GST<audio src="Neutral/T_GST/4.wav" controls width="10"></audio></td>
-          <td>T_SER<audio src="Neutral/T_SER/4.wav" controls></audio></td>
-          <td>T_G_S<audio src="Neutral/T_G_S/4.wav" controls></audio></td>
-          <td>T_S_G<audio src="Neutral/T_S_G/4.wav" controls></audio></td>
+            <th>
+                <audio controls="" style="width: 140px;">
+                  <source src="./audio/0019_000284_GT.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 140px;">
+                  <source src="./audio/0019_000284_GST.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 140px;">
+                  <source src="./audio/0019_000284_SER.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+           <th>
+                <audio controls="" style="width: 140px;">
+                  <source src="./audio/0019_000284_G_S.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 140px;">
+                  <source src="./audio/0019_000284_S_G.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 140px;">
+                  <source src="./audio/0017_000010_GT.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+          <audio controls="" style="width: 140px;">
+            <source src="./audio/0017_000010_GST.wav" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+    </th>
+    <th>
+      <audio controls="" style="width: 140px;">
+        <source src="./audio/0017_000010_SER.wav" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+    </th>
+    <th>
+      <audio controls="" style="width: 140px;">
+        <source src="./audio/0017_000010_G_S.wav" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+    </th>
+    <th>
+      <audio controls="" style="width: 140px;">
+        <source src="./audio/0017_000010_S_G.wav" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+    </th>
           </tr>
+        
+      </tbody></table>
+
+
+      <p><b>Sad</b></p>
+      <table  border="1">
+        <tbody>
+        
+          <tr>
+          <td colspan="5">text1:"It's me PigLit, help help!"</td>
+          <td colspan="5">text2:"柯特妮身穿豹纹大衣。"</td>
+      
+        </tr>
         <tr>
+          <th><strong>GT</strong></th>
+          <th><strong>T_GST</strong></th>
+          <th><strong>T_SER</strong></th>
+          <th><strong>T_G_S</strong></th>
+          <th>T_S_G</th>
+          <th><strong>GT</strong></th>
+          <th><strong>T_GST</strong></th>
+          <th><strong>T_SER</strong></th>
+          <th><strong>T_G_S</strong></th>
+          <th><strong>T_S_G</strong></th>
+        </tr>
           <tr>
-            <td>Text5:I did go, and made many prisoners.</td>
-          </tr>
-          <tr>
-            <td>T_GST<audio src="Neutral/T_GST/5.wav" controls width="10"></audio></td>
-            <td>T_SER<audio src="Neutral/T_SER/5.wav" controls></audio></td>
-            <td>T_G_S<audio src="Neutral/T_G_S/5.wav" controls></audio></td>
-            <td>T_S_G<audio src="Neutral/T_S_G/5.wav" controls></audio></td>
+              <th>
+                  <audio controls="" style="width: 140px;">
+                    <source src="./audio/0019_001151_GT.wav" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+          </th>
+          <th>
+                  <audio controls="" style="width: 140px;">
+                    <source src="./audio/0019_001151_GST.wav" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+          </th>
+          <th>
+                  <audio controls="" style="width: 140px;">
+                    <source src="./audio/0019_001151_SER.wav" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+          </th>
+             <th>
+                  <audio controls="" style="width: 140px;">
+                    <source src="./audio/0019_001151_G_S.wav" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+          </th>
+          <th>
+                  <audio controls="" style="width: 140px;">
+                    <source src="./audio/0019_001151_S_G.wav" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+          </th>
+          <th>
+                  <audio controls="" style="width: 140px;">
+                    <source src="./audio/0015_001059_GT.wav" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+          </th>
+          <th>
+            <audio controls="" style="width: 140px;">
+              <source src="./audio/0015_001059_GST.wav" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+      </th>
+      <th>
+        <audio controls="" style="width: 140px;">
+          <source src="./audio/0015_001059_SER.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+      </th>
+      <th>
+        <audio controls="" style="width: 140px;">
+          <source src="./audio/0015_001059_G_S.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+      </th>
+      <th>
+        <audio controls="" style="width: 140px;">
+          <source src="./audio/0015_001059_S_G.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+      </th>
             </tr>
-          <tr>
-    </table>
+          
+        </tbody></table>
+  </div>
+
+  <div class="content">
+    <h2> Methods </h2>
+    <div class="center">
+      <img src="images/fi_new1.png", width="1200">
     </div>
+    <br> <br>
+    In this paper,  we propose an implicit emotion representations learning method based on graph neural network, considering dependency relations of a sentence and text sentiment classification (TSC) task. We adopted two main components for our model:
+    <ul>
+      <li><b>Emotion embedding network</b>, which is comprised of an emotion encoder and an emotion classifier.We use this network to construct an emotion embedding space, learn from reference audio samples through the speech emotion recognition task. And we use the explicit emotion representations learned from the emotion encoder to perform emotion transfer during inference.
+      </li>
+      <li><b>Sentiment embedding network:</b>,  which is also divided into two parts: a sentiment encoder and a classifier. And the sentiment encoder mainly consists of graph construction module and graph representation module. Like the explicit emotion representations module, we learn sentiment information from text through the text sentiment classification task. And we only use the sentiment encoder to extract implicit representations from the text during inference.
+      </li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 </div>
